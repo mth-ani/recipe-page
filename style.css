@@ -114,7 +114,7 @@ article {
   border-collapse: collapse;
 }
 .nutrition td {
-  padding: 8px;
+  padding: 12px 8px;
   border-bottom: 1px solid hsl(30, 18%, 87%);
 }
 .nutrition td:last-child {
@@ -123,6 +123,13 @@ article {
 }
 .nutrition tr:last-child td {
   border-bottom: none;
+}
+/* horizontal rule */
+hr {
+  margin: 32px 0;
+  color: hsl(14, 45%, 36%);
+  border: none;
+  border-top: 1px solid hsl(30, 18%, 87%);
 }
 /* footer section */
 .attribution {
@@ -138,4 +145,23 @@ article {
   color: hsl(14, 45%, 36%);
   text-decoration: none;
   font-weight: 600;
+}
+
+
+@media (max-width: 768px) {
+    article {
+      margin: 0;
+      padding: 32px;
+      border-radius: 0;
+    }
+    .recipe-header img {
+      width: calc(100% + 64px);
+      margin-left: -32px;
+      margin-right: -32px;
+      margin-top: -32px;
+      border-radius: 0;
+    }
+    .recipe-header h1 {
+      font-size: 32px;
+    }
 }
